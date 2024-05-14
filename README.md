@@ -27,6 +27,9 @@ To run this project, follow these steps:
 6. Test other endpoints (e.g. `http://localhost:8001/helloworld/your-name`,
    `http://localhost:8001/jsx/HelloWorld`,
    `http://localhost:8001/jsx/HelloWorldWithState`, etc)
+7. Develop your own endpoints by adding new files under the `functions`
+   directory.
+8. Enjoy the hassle-free development experience for setting up endpoints and SSR JSX components.
 
 ## Production
 
