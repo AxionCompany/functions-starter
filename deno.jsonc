@@ -1,0 +1,11 @@
+{
+    "tasks": {
+        "start": "deno run -A --reload=http://localhost:9000,http://localhost:8000,https://raw.githubusercontent.com/AxionCompany/functions --no-lock --unstable-sloppy-imports  --no-prompt --unstable https://raw.githubusercontent.com/AxionCompany/functions/develop/main.ts",
+        "dev": "WATCH=true deno run --reload=http://localhost:9000,http://localhost:8000 -A --no-lock --unstable-sloppy-imports  --no-prompt --unstable https://raw.githubusercontent.com/AxionCompany/functions/develop/main.ts",
+        "dev:local": "WATCH=true deno run --reload=http://localhost:9000,http://localhost:8000  -A --no-lock --unstable-sloppy-imports  --no-prompt --unstable http://localhost:9000",
+        "file-loader": "deno run -A -r --unstable-* --no-lock https://raw.githubusercontent.com/AxionCompany/functions/develop/file-loader.ts",
+        "file-loader:dev": "deno run -A -r --unstable --no-lock http://localhost:9000/file-loader",
+        "api": "deno run -A -r --unstable-* --no-lock https://raw.githubusercontent.com/AxionCompany/functions/develop/api.ts",
+        "api:dev": "deno run -A -r --unstable-* --watch http://localhost:8000 --no-lock http://localhost:9000/api"
+    }
+}
